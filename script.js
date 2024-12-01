@@ -32,12 +32,12 @@ const userName = document.createElement("input");
 userName.placeholder = "Email address or phone number"; // Corrected from input.placeHolder to userName.placeholder
 userName.type = "text";
 userName.name = "email";
-
+userName.id="email"
 const password = document.createElement("input");
 password.placeholder = "Password"; // Corrected from input.placeHolder to password.placeholder
 password.type = "password";
 password.name = "password";
-
+password.id="password" ;
 const login = document.createElement("button");
 login.textContent = "Log In";
 login.type = "submit";
