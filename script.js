@@ -54,6 +54,7 @@ const br2 = document.createElement("br");
 const newAcc = document.createElement("div");
 newAcc.textContent = "Create new account";
 newAcc.className = "new-account";
+newAcc.classList.add('signup');
 newAcc.onclick = () => {
   window.location.href = "/reg/"; // Redirect to /reg/ on click
 };
