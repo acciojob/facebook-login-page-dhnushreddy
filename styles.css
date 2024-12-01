@@ -18,13 +18,13 @@ body {
     width: 100vw;
 	margin: clamp(0.5%, 10%, 2rem);
   }
-	.logoDiv{
+	.left{
 		width: clamp(100px, 45vw, 600px);
 		 .heading {
 	     width: clamp(30%,100%,70%);
     }
 	}
-  .logoDiv,
+  .left,
   .loginForm {
 	text-align:center;
     height: auto;

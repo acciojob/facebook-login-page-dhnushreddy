@@ -5,7 +5,7 @@ mainDiv.className = "main";
 
 // Create logo container
 const logoDiv = document.createElement("div");
-logoDiv.className = "logoDiv";
+logoDiv.className = "left";
 
 // Create form container
 const form = document.createElement("form");
@@ -54,7 +54,9 @@ const br2 = document.createElement("br");
 const newAcc = document.createElement("div");
 newAcc.textContent = "Create new account";
 newAcc.className = "new-account";
-
+newAcc.onclick = () => {
+  window.location.href = "/reg/"; // Redirect to /reg/ on click
+};
 // Append inputs and buttons to form
 form.appendChild(userName);
 form.append(br);
