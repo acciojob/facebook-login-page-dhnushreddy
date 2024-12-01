@@ -1,138 +1,59 @@
-/* General Reset */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
   font-family: Arial, sans-serif;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   background-color: #f0f2f5;
   margin: 0;
-}
+  font-size: auto;
 
-/* Main Container */
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  max-width: 500px;
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Logo Section */
-.logoDiv {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.logoDiv h1 {
-  font-size: clamp(1.8rem, 4vw, 2.5rem); /* Scales dynamically with screen size */
-  color: #1877f2;
-}
-
-.logoDiv p {
-  font-size: clamp(1rem, 2.5vw, 1.2rem); /* Scales dynamically with screen size */
-  color: #606770;
-  margin-top: 10px;
-}
-
-/* Form Section */
-.loginForm {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.loginForm input {
-  width: 100%;
-  padding: 10px;
-  font-size: clamp(0.9rem, 2vw, 1rem); /* Scales dynamically with screen size */
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-.loginForm input::placeholder {
-  font-size: clamp(0.8rem, 1.8vw, 1rem); /* Placeholder scales dynamically */
-  color: #aaa;
-}
-
-.loginForm input:focus {
-  outline: none;
-  border-color: #1877f2;
-}
-
-.loginForm button {
-  width: 100%; /* Matches the input width */
-  padding: 10px;
-  font-size: clamp(0.9rem, 2vw, 1rem); /* Scales dynamically with screen size */
-  color: #fff;
-  background-color: #1877f2;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.loginForm button:hover {
-  background-color: #145dbf;
-}
-
-.loginForm p {
-  text-align: center;
-  font-size: clamp(0.9rem, 2vw, 1rem); /* Scales dynamically with screen size */
-  color: #1877f2;
-  cursor: pointer;
-}
-
-.loginForm hr {
-  border: 0;
-  height: 1px;
-  background-color: #ddd;
-  margin: 20px 0;
-}
-
-.new-account {
-  text-align: center;
-  font-size: clamp(0.9rem, 2vw, 1rem); /* Scales dynamically with screen size */
-  padding: 10px;
-  background-color: #42b72a;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.new-account:hover {
-  background-color: #36a420;
-}
-
-/* Responsive Design */
-@media (min-width: 768px) {
   .main {
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 900px;
-    padding: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+	margin: clamp(0.5%, 10%, 2rem);
   }
 
-  .logoDiv {
-    text-align: left;
-    margin-right: 40px;
-    max-width: 50%;
+  .logoDiv,
+  .loginForm {
+    height: auto;
+    padding: clamp(0.5%, 10%, 2rem);
+    /* width: clamp(300px, 45vw, 600px); */
+    /* flex: 1 1 30vw; */
+    font-size: clamp(4px, 1vw, 16px);
+    .heading {
+      font-size: 5vw;
+		color:blue;
+    }
   }
 
   .loginForm {
-    max-width: 50%;
+    text-align: center;
+    background: #fff;
+  }
+
+  .loginForm input,
+  .loginForm button {
+    font-size: inherit;
+     width: clamp(100px, 45vw, 600px);
+    padding: clamp(0.12rem, 2%, 1rem);
+    border-radius: clamp(0.2rem, 2%, 0.4rem);
+    margin: 0.3rem;
+  }
+
+  .loginForm .forgot {
+    color: blue;
+  }
+
+  .loginForm .new-account {
+    background-color: green;
+    padding: 0.5rem;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 0.3rem;
   }
 }
