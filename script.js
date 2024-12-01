@@ -20,9 +20,10 @@ const p = document.createElement("p");
 p.textContent =
 `Facebook helps you connect and 
 	share with the people in your life.`
-const heading = document.createElement("h1");
-heading.textContent = "Facebook";
+const heading = document.createElement("img");
+heading.src = "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg";
 heading.className = "heading";
+heading.alt = "Facebook Logo";
 logoDiv.appendChild(heading);
 logoDiv.appendChild(p); // Corrected typo from appendCihld to appendChild
 

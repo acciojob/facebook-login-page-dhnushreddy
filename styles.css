@@ -14,32 +14,34 @@ body {
   .main {
     display: flex;
     justify-content: center;
+	align-items:center;
     width: 100vw;
 	margin: clamp(0.5%, 10%, 2rem);
   }
-
+	.logoDiv{
+		width: clamp(100px, 45vw, 600px);
+		 .heading {
+	     width: clamp(30%,100%,70%);
+    }
+	}
   .logoDiv,
   .loginForm {
+	text-align:center;
     height: auto;
     padding: clamp(0.5%, 10%, 2rem);
-    /* width: clamp(300px, 45vw, 600px); */
-    /* flex: 1 1 30vw; */
     font-size: clamp(4px, 1vw, 16px);
-    .heading {
-      font-size: 5vw;
-		color:blue;
-    }
   }
 
+	
   .loginForm {
     text-align: center;
     background: #fff;
   }
 
   .loginForm input,
-  .loginForm button {
+  .loginForm button,.heading{
     font-size: inherit;
-     width: clamp(100px, 45vw, 600px);
+    width: clamp(100px, 45vw, 600px);
     padding: clamp(0.12rem, 2%, 1rem);
     border-radius: clamp(0.2rem, 2%, 0.4rem);
     margin: 0.3rem;
